@@ -40,6 +40,7 @@ body {
 
 .header {
   width: 127.5rem;
+  margin-bottom: 3rem;
 }
 
 .header__logo img {
@@ -49,6 +50,8 @@ body {
 .main {
   display: flex;
   gap: 5.9rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main__content {
@@ -144,4 +147,62 @@ body {
 
 .social-links li:hover svg {
   fill: var(--Soft-Magenta);
+}
+
+@media screen and (max-width: 1325px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    background-position: left center;
+  }
+
+  .header {
+    width: auto;
+  }
+
+  .footer {
+    width: auto;
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  body {
+    padding: 40px;
+    background-image: url(images/bg-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .main__image img {
+    width: 100%;
+  }
+
+  .main__content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .button,
+  .button:link,
+  .button:visited {
+    align-self: center;
+  }
+
+  .footer {
+    width: auto;
+    margin-top: 8rem;
+  }
 }
