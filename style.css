@@ -1,0 +1,147 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+  --White: hsl(0, 0%, 100%);
+
+  --Semibold: 600;
+  --Regular: 400;
+
+  --Shadow: 0.2rem 0.4rem 0.9rem 0.3rem rgba(0, 0, 0, 0.2586);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  min-height: 100dvh;
+  background-color: var(--Violet);
+  color: var(--White);
+  background-image: url(images/bg-desktop.svg);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 6rem 2rem;
+}
+
+.header {
+  width: 127.5rem;
+}
+
+.header__logo img {
+  width: 21rem;
+}
+
+.main {
+  display: flex;
+  gap: 5.9rem;
+}
+
+.main__content {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.main__image img {
+  width: 69.6rem;
+}
+
+.heading {
+  font-family: Poppins;
+  font-size: 4rem;
+  line-height: 150%;
+  font-weight: var(--Semibold);
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: var(--Regular);
+}
+
+.button,
+.button:link,
+.button:visited {
+  height: 5.6rem;
+  background-color: var(--White);
+  color: var(--Violet);
+  display: flex;
+  align-items: center;
+  padding: 0 6.4rem;
+  border-radius: 5.6rem;
+  text-decoration: none;
+  box-shadow: var(--Shadow);
+  align-self: flex-start;
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: var(--Regular);
+
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  color: var(--White);
+  background-color: var(--Soft-Magenta);
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+.footer {
+  width: 127.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.social-links li {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  border: 0.118rem solid var(--White);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.social-links li:hover {
+  border: 0.118rem solid var(--Soft-Magenta);
+}
+
+.social-links svg {
+  width: 2rem;
+  fill: var(--White);
+
+  transition: all 0.2s ease;
+}
+
+.social-links li:hover svg {
+  fill: var(--Soft-Magenta);
+}
